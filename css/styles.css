@@ -1,0 +1,29 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aqua;
+}
+nav{
+   margin-left:500px;
+   padding-top:20px;
+   padding-bottom: 20px;
+   background-color: black;
+   margin-right: 500px;
+   border-radius:7px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav ul{
+
+}
+nav ul li{
+    font-family: 'Dosis', sans-serif;
+    color:white;
+    padding-right: 100px;
+    display:inline-flex;
+    text-decoration: none;
+    list-style: none;
+}
