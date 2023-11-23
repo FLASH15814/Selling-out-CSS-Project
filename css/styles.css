@@ -323,9 +323,10 @@ nav ul li a {
     margin-top: 800px;
     margin-left:1435px;
 }
+/* .container ->2 */
 .container-2{
     position: relative;
-    background-color: #4ab1b1;
+    background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(4,14,70,1) 69%, rgba(8,28,140,1) 100%, rgba(14,50,251,1) 100%);
     padding: 20px 840px 600px 50px; 
     position: absolute;
     margin-top:1000px;
@@ -334,13 +335,13 @@ nav ul li a {
     width:1020px;
 }
 .container-2 .box h2{
-    width:200px;
+    width:250px;
     position: absolute;
     margin-left:-10px;
     padding: 20px 160px 600px 50px; 
     
 }
-.container-2 .box-1{
+.container-2 .box-1,.container-2 .box-2,.container-2 .box-3{
     position:absolute;
     box-shadow: rgba(41, 139, 161, 0.56) 0px 22px 70px 4px;
     border-color:rgb(255, 255, 255);
@@ -349,21 +350,29 @@ nav ul li a {
     margin-top:150px;
     padding:50px 100px 50px 100px; 
     color:black;
+    transition: transform .2s;
 }
-.container-2 .box-1 img{
+.container-2 .box-2{
+    margin-left:700px;
+    padding-bottom:54px;
+}
+.container-2 .box-3{
+    margin-left:1320px;
+}
+.container-2 .box-1 img,.container-2 .box-2 img,.container-2 .box-3 img{
     margin-top:30px;
     position: relative;
     height: 200px;
     width:200px;
 }
-.container-2 .box-1 h1{
+.container-2 .box-1 h1,.container-2 .box-2 h1,.container-2 .box-3 h1{
     font-size:30px;
     text-align: center;
 }
-.container-2 .box-1 p{
+.container-2 .box-1 p,.container-2 .box-2 p,.container-2 .box-3 p{
     font-size:22px;
 }
-.container-2 .box-1 button{
+.container-2 .box-1 button,.container-2 .box-2 button,.container-2 .box-3 button{
     border:none;
     font-size:22px;
     margin-left:20px;
@@ -372,8 +381,246 @@ nav ul li a {
     height: 50px;
     width:150px;
 }
-.container-2 .box-1 button a.xeon{
+.container-2 .box-2 button{
+    margin-top:24px;
+}
+
+.container-2 .box-1 button a.xeon,.container-2 .box-2 button a.xeon,.container-2 .box-3 button a.xeon{
     color:black;
     text-decoration: none;
     border: none;
+    position: relative;
 }
+.container-2 .box-1:hover,.container-2 .box-2:hover,.container-2 .box-3:hover{
+    transform: scale(1.2);
+}
+/* .explore */
+.explore{
+    padding:900px 1110px 100px 800px;
+    background: linear-gradient(0deg, rgba(4,0,255,1) 0%, rgba(2,0,150,1) 0%, rgba(0,9,255,1) 0%, rgba(0,7,186,1) 0%, rgba(0,2,65,1) 37%, rgba(0,2,51,1) 100%, rgba(0,0,0,0.9556197478991597) 100%);
+    position: absolute;
+    border-color: #fff;
+    margin-top:1819px;
+    margin-left:-10px;
+}
+
+.explore h1{
+    margin-top:-800px;
+    font-size:50px;
+    margin-left:-600px;
+    color:white;
+    position: absolute;
+}
+.explore p{
+    position: absolute;
+    color:white;
+    margin-top:-670px;
+    font-size:30px;
+    margin-left:-600px;
+}
+.explore button {
+    height: 100px;
+    position:absolute;
+    margin-top:-200px;
+    margin-left:-600px;
+    background: none;
+    border:outset;
+}
+.explore button a.shop-btn-2{
+    font-size:30px;
+    position: relative;
+    text-decoration: none;
+}
+.explore h3{
+    position:absolute;
+    margin-left:-600px;
+    font-size:32px;
+    margin-top:-600px;
+}
+.explore .li-2{
+    position:absolute;
+    margin-top:-570px;
+    padding-top:40px;
+    margin-left:-500px;
+}
+.explore .li-2 li{
+    font-size:30px;
+    padding-top: 10px;;
+}
+
+/* Container -> 3 */
+.container-3{
+    position: relative;
+    background: linear-gradient(341deg, rgba(0,0,0,1) 0%, rgba(4,14,70,1) 69%, rgba(8,28,140,1) 100%, rgba(14,50,251,1) 100%);
+    padding: 20px 840px 600px 50px; 
+    position: absolute;
+    margin-top:2720px;
+    margin-left:-10px;
+    height: 200px;;
+    width:1020px;
+}
+.container-3 button{
+    height: 50px;
+    width:100px;
+    margin-top:200px;
+    background: none;
+    border:none;
+}
+.container-3 i{
+    position: absolute;
+    cursor: pointer;
+}
+.container-3 .sell-1{
+    position: absolute;
+    margin-top:-120px;
+    margin-left:200px;
+    padding:60px 80px 200px 120px ;
+    background-color: white;;
+}
+.container-3 .sell-1 img{
+    margin-left:30px;
+    height: 150px;
+    width:150px
+}
+.container-3 .sell-1 h1{
+   margin-left:30px;
+    color:black;
+}
+.container-3 .sell-1 p{
+    margin-top:20px;
+    margin-left:-15px;
+    color:black;
+    font-size: 26px;
+}
+.container-2 .box-1 img,.container-2 .box-2 img,.container-2 .box-3 img,.container-3 .sell-1 img {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  .container-2 .box-1 img:hover,.container-2 .box-2 img:hover,.container-2 .box-3 img:hover,.container-3 .sell-1 img:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+  }
+  
+  .container-3 h1.heading-3{
+    position:absolute;
+    margin-top:20px;
+    margin-left: 160px;
+    cursor:pointer;
+  }
+  .container-3 h1.heading-3::after{
+    content:"";
+  position:absolute;
+  width:100%;
+  height:4px;
+  background:white;
+  bottom:-5px;
+  left:0;
+  transform:scale(0,1);
+  transform-origin:left;
+  transition:transform 0.4s;
+  }
+.container-3 h1.heading-3:hover::after{
+    transform:scale(1,1);
+  transform-origin:right;
+}
+
+figure.fig-1 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'Raleway', Arial, sans-serif;
+    position: absolute;
+    overflow: hidden;
+    margin: 10px;
+    margin-top:-600px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+    margin-left:500px;
+  }
+  figure.fig-1 * {
+    
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  figure.fig-1 img {
+    
+    max-width: 100%;
+    vertical-align: top;
+  }
+  figure.fig-1 figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+  }
+  figure.fig-1 h2,
+  figure.fig-1 h4 {
+    margin: 0;
+  }
+  figure.fig-1 h2 {
+    font-weight: 600;
+  }
+  figure.fig-1 h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  figure.fig-1 i {
+    font-size: 32px;
+  }
+  figure.fig-1:after {
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0;
+  }
+  figure.fig-1 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  figure.fig-1:hover figcaption,
+  figure.fig-1.hover figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  figure.fig-1:hover:after,
+  figure.fig-1.hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0.9;
+  }
+  
