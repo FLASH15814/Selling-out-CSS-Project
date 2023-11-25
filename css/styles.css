@@ -400,7 +400,7 @@ nav ul li a {
     background: linear-gradient(0deg, rgba(4,0,255,1) 0%, rgba(2,0,150,1) 0%, rgba(0,9,255,1) 0%, rgba(0,7,186,1) 0%, rgba(0,2,65,1) 37%, rgba(0,2,51,1) 100%, rgba(0,0,0,0.9556197478991597) 100%);
     position: absolute;
     border-color: #fff;
-    margin-top:1819px;
+    margin-top:2720px;
     margin-left:-10px;
 }
 
@@ -454,9 +454,9 @@ nav ul li a {
     background: linear-gradient(341deg, rgba(0,0,0,1) 0%, rgba(4,14,70,1) 69%, rgba(8,28,140,1) 100%, rgba(14,50,251,1) 100%);
     padding: 20px 840px 600px 50px; 
     position: absolute;
-    margin-top:2720px;
+    margin-top:1819px;
     margin-left:-10px;
-    height: 200px;;
+    height: 300px;;
     width:1020px;
 }
 
@@ -698,8 +698,9 @@ figure.fig-1 {
     overflow: hidden;
     padding: 20px;
     margin-left:-50px;
-   margin-top:-100px;
-   width:1800px;
+   margin-top:-150px;
+   width:1850px;
+   
   }
   
   .product-category {
@@ -711,11 +712,13 @@ figure.fig-1 {
   }
   
   .product-container {
+    margin-bottom: -50px;
     padding: 0 10vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
     width:1700px;
+    height: 780px;
   }
   
   .product-container::-webkit-scrollbar {
@@ -726,10 +729,19 @@ figure.fig-1 {
     position: relative;
     flex: 0 0 auto;
     width: 250px;
-    height: 450px;
+    height: 500px;
     margin-right: 40px;
+    border:outset;
+    padding:50px 50px 50px 50px; 
+    border:none;
+    background: linear-gradient(302deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgba(0,9,255,1) 0%, rgba(0,4,109,1) 0%, rgba(0,2,65,1) 11%, rgba(0,3,91,1) 40%, rgba(0,7,186,1) 100%, rgba(0,0,0,0.9556197478991597) 100%, rgba(0,2,51,1) 100%);
+    transition: transform 0.2s;
+    margin-top:50px;
   }
-  
+  .product-card:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
   .product-image {
     position: relative;
     width: 100%;
@@ -877,4 +889,123 @@ figure.fig-1 {
 .collection:nth-child(3) {
   grid-column: span 2;
   margin-bottom: 10px;
+}
+
+/* .container-4 */
+.container-4{
+    position: relative;
+    background: linear-gradient(341deg, rgba(0,0,0,1) 0%, rgba(4,14,70,1) 69%, rgba(8,28,140,1) 100%, rgba(14,50,251,1) 100%);
+    padding: 20px 840px 600px 50px; 
+    position: absolute;
+    margin-top:3620px;
+    margin-left:-10px;
+    height: 760px;
+    width:1020px;
+}
+/* .table-1{
+    border-style: outset;
+    grid: 6px;
+} */
+.table-1 {
+    height: 300px;
+    width:500px;
+    position:relative;
+    display:flex;
+}
+.table-1 img{
+  padding-right: 20px;
+}
+.table-1 img.micron{
+  margin-left: 100px;
+}
+.table-1 .nvidia img{
+    position: absolute;
+    margin-left:-1180px;
+    height: 140px;
+    margin-top:400px;   
+}
+/* footer */
+footer{
+  position:relative;
+  margin-top:500px;
+  border-top:solid;
+  border-width:1px;
+  padding-top:50px;
+  width:1800px;
+  
+}
+footer img{
+  height: 70px;
+  width:100px;
+  position:relative;
+}
+footer .tab{
+  display: flex;
+  position: relative;
+  margin-left:280px;
+  padding-left:100px;
+}
+footer h1{
+  margin-left:120px;
+  margin-top:-80px;
+}
+footer .tab a{
+  display: block;
+  text-decoration: none;
+  position: relative;
+  padding-top:5px;
+  color:white;
+  margin-left:-75px;
+}
+footer .tab .company-1 a{
+  margin-left:-100px;
+}
+footer .tab a:hover{
+  text-decoration: none;
+  position: relative;
+  color:grey;
+}
+footer .tab a::after{
+  position: absolute;
+  text-decoration: none;
+  display: none;
+}
+footer .tab .contact-1 p{
+  margin-top:-3px;
+  margin-left:-150px;
+}
+footer .tab .follow-1{
+  margin-left:-50px;
+}
+/* footer .tab-2 */
+footer .tab-2{
+ margin-top:25px;
+  display:block;
+  border:inherit;
+  border-top-width: 1px;
+  padding-top:15px;
+  border-bottom: 1px solid; 
+  padding-bottom:25px;
+  
+}
+footer .tab-2 a{
+  text-decoration:none;
+  padding-left:100px;
+  margin-right:140px;
+  color:white;
+}
+footer .tab-2 a::after{
+  display: none;
+}
+footer p{
+  text-align: center;
+ 
+}
+/* Product Page */
+body.product{
+  background-color: #000;
+}
+nav.nav2{
+  margin-top:120px;
+  background-color: blur;
 }
