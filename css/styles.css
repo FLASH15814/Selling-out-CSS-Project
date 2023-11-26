@@ -9,6 +9,7 @@ body{
     background: linear-gradient(320deg, rgba(0,0,255,1) 0%, rgba(0,1,120,1) 0%, rgba(0,2,55,1) 36%, rgba(0,1,31,1) 55%, rgba(0,1,16,1) 80%, rgba(0,1,16,1) 80%, rgba(0,0,0,1) 100%);
     font-size:20px;
     font-family: 'Dosis', sans-serif;
+    margin-left:-3px;
 }
 nav{
     color:white;
@@ -899,7 +900,7 @@ figure.fig-1 {
     position: absolute;
     margin-top:3620px;
     margin-left:-10px;
-    height: 760px;
+    height: 680px;
     width:1020px;
 }
 /* .table-1{
@@ -927,11 +928,13 @@ figure.fig-1 {
 /* footer */
 footer{
   position:relative;
-  margin-top:500px;
+  margin-top:450px;
   border-top:solid;
   border-width:1px;
   padding-top:50px;
   width:1800px;
+  margin-bottom:50px;
+
   
 }
 footer img{
@@ -944,6 +947,7 @@ footer .tab{
   position: relative;
   margin-left:280px;
   padding-left:100px;
+  margin-top:-60px;
 }
 footer h1{
   margin-left:120px;
@@ -1175,7 +1179,7 @@ body .our-products{
   padding : 50px 25px 50px 50px;
   background-color: white;
   color:black;
-  margin-left:100px;
+  margin-left:60px;
 }
 .sidebar label{
   display: block;
@@ -1183,13 +1187,14 @@ body .our-products{
   font-size:24px;
 }
 .sidebar input{
-  width:150px;
+  width:280px;
   font-size:20px;
   padding:2px 2px 2px 2px;
 }
 .sidebar select{
-  width:157px;
+  width:288px;
   height: 30px;
+  font-size:20px;
 }
 
 /* Radio Button */
@@ -1337,7 +1342,6 @@ input:active+.design::after {
   align-items: center;
   justify-content: center;
   margin-top:-300px;
-  
 }
 
 .box-minmax {
@@ -1354,14 +1358,12 @@ input:active+.design::after {
 
 .range-slider {
   margin-top: 30vh;
-  
 }
 
 .rs-range {
   margin-top: 29px;
   width: 600px;
   -webkit-appearance: none;
-  
 }
 .rs-range:focus {
   outline: none;
@@ -1448,9 +1450,22 @@ input:active+.design::after {
   margin-top: -2px;
   
 }
-
-
-
+.sidebar button{
+  height: 50px;
+  width:100px;
+  border:none;
+  background-color:rgb(37, 37, 72);
+  color:white;
+  margin-right:50px;
+  margin-top:30px;
+  margin-left:45px;
+  font-size:20px;
+  font-weight: 600;
+  transition:box-shadow 0.5s;
+}
+.sidebar button:hover{
+  box-shadow: rgba(0, 0, 255, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 /* Intel Products */
 .intel{
   display: flex;
@@ -1458,8 +1473,58 @@ input:active+.design::after {
   flex-wrap: wrap;
   margin-left: 600px;
   margin-bottom:500px;
+  padding:20px 20px 20px 20px;
+}
+.intel h1{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.intel p{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:700;
 }
 .intel img{
-  height: 100px;
-  width:100px;
+  height: 200px;
+  width:200px;
+  margin-left:48px;
+}
+
+.intel button{
+  margin-left:15px;
+  border:none;
+  height:40px;
+  width:130px;
+  font-size: 18px;
+  margin-right:0px;
+  transition: background-color 0.7s;
+}
+.intel button:hover{
+  cursor:pointer;
+  background-color: #09008c;
+  color:white;
+}
+.intel a{
+  text-decoration: none;
+  position:absolute;
+  margin-top:60px;
+  margin-left:-200px;
+  color:#09008c;
+  font-size:24px;
+  transition:color 0.7s;
+}
+.intel a:hover{
+  color:black;
+}
+.intel h2{
+  text-decoration: line-through;
+}
+.intel h1,.intel h2{
+  display: inline;
+}
+.intel-1,.intel-2,.intel-3{
+  width:300px;
+  padding:40px 40px 100px 40px;
+  background-color: white;
+  color:black;
 }
