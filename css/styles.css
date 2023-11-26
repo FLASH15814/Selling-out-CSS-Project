@@ -6,7 +6,7 @@ html{
 }
 body{
     color:white;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(320deg, rgba(0,0,255,1) 0%, rgba(0,1,120,1) 0%, rgba(0,2,55,1) 36%, rgba(0,1,31,1) 55%, rgba(0,1,16,1) 80%, rgba(0,1,16,1) 80%, rgba(0,0,0,1) 100%);
     font-size:20px;
     font-family: 'Dosis', sans-serif;
 }
@@ -1005,9 +1005,10 @@ footer p{
 body.product{
   background: linear-gradient(320deg, rgba(0,0,255,1) 0%, rgba(0,1,120,1) 0%, rgba(0,2,55,1) 36%, rgba(0,1,31,1) 55%, rgba(0,1,16,1) 80%, rgba(0,1,16,1) 80%, rgba(0,0,0,1) 100%);
   margin-bottom:500px;
+  height: 5000px;
 }
 nav.nav2{
-  margin-top:120px;
+  margin-top:180px;
   filter: blur(1px);
   
 }
@@ -1020,10 +1021,10 @@ nav.nav2:hover{
 
 .content-width {
   width: 50%;
-  height: 100vh;
+  height:2000px;
   margin: 0 auto;
   margin-left:380px;
-  margin-top:-50px;
+  margin-top:-200px;
 }
 
 .slideshow {
@@ -1069,7 +1070,6 @@ nav.nav2:hover{
   height: 650px;
   opacity: 0;
   display: block;
-  /* transition: property name | duration | timing-function | delay  */
   transition: opacity .3s ease-out .45s;
 }
 
@@ -1096,6 +1096,7 @@ nav.nav2:hover{
   top: -70px;
   left: 470px;
   z-index: 100;
+  width: 600px;
 }
 
 .item-header-2{
@@ -1141,7 +1142,7 @@ nav.nav2:hover{
   position: absolute;
   text-align: right;
   z-index: 1000;
-  margin-left:510px;
+  margin-left:480px;
   margin-top:2100px;
 }
 
@@ -1160,4 +1161,305 @@ nav.nav2:hover{
 
 .controls ul li.active {
   background:#ffffff;;
+}
+body.product p{
+  font-size:60px;
+}
+/* Products for product.html */
+body .our-products{
+  margin-top:-800px;
+  text-align: center;
+}
+.sidebar{
+  position: absolute;
+  padding : 50px 25px 50px 50px;
+  background-color: white;
+  color:black;
+  margin-left:100px;
+}
+.sidebar label{
+  display: block;
+  margin-top:10px;
+  font-size:24px;
+}
+.sidebar input{
+  width:150px;
+  font-size:20px;
+  padding:2px 2px 2px 2px;
+}
+.sidebar select{
+  width:157px;
+  height: 30px;
+}
+
+/* Radio Button */
+.products section.light {
+  width: 150px;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-left:100px;
+  margin-right:100px;
+  flex-direction: row;
+  
+}
+section::before,
+section::after {
+  content: "";
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+}
+
+section::before {
+  width: 30px;
+  height: 30px;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  top: 18px;
+  left: 18px;
+}
+
+section::after {
+  width: 42px;
+  height: 42px;
+  top: 11px;
+  left: 11px;
+}
+
+.light {
+  --primary: hsl(247, 100%, 44%);
+  --other: hsl(0, 0%, 14%);
+  background: hsl(0, 0%, 100%);
+}
+
+h1 {
+  color: var(--other);
+  padding: 8px 4px;
+  border-bottom: 2px solid var(--other);
+}
+
+
+/* label */
+section.light label {
+  display: flex;
+  justify-content: flex-start;
+  width:50%;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-right:20px;
+  margin: 12px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+section.light input {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.design {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--other);
+  border-radius: 100%;
+  margin-right: 16px;
+  position: relative;
+}
+
+.design::before,
+.design::after {
+  content: "";
+  display: block;
+
+  width: inherit;
+  height: inherit;
+
+  border-radius: inherit;
+
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+.design:before {
+  background: var(--other);
+  opacity: 0;
+  transition: .3s;
+}
+
+.design::after {
+  background: var(--primary);
+  opacity: .4;
+  transition: .6s;
+}
+
+.text {
+  color: var(--other);
+  font-weight: bold;
+}
+
+input:checked+.design::before {
+  opacity: 1;
+  transform: scale(.6);
+}
+
+input:hover+.design,
+input:focus+.design {
+  border: 1px solid var(--primary);
+}
+
+input:hover+.design:before,
+input:focus+.design:before {
+  background: var(--primary);
+}
+
+input:hover~.text {
+  color: var(--primary);
+}
+
+input:focus+.design::after,
+input:active+.design::after {
+  opacity: .1;
+  transform: scale(2.6);
+}
+
+/* Range Slider */
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:-300px;
+  
+}
+
+.box-minmax {
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #000000;
+}
+.box-minmax span:first-child {
+  margin-left: 10px;
+}
+
+.range-slider {
+  margin-top: 30vh;
+  
+}
+
+.rs-range {
+  margin-top: 29px;
+  width: 600px;
+  -webkit-appearance: none;
+  
+}
+.rs-range:focus {
+  outline: none;
+}
+.rs-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #000000;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+.rs-range::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #ffffff;
+  border-radius: 0px;
+  border: 0px solid #010101;
+
+}
+.rs-range::-webkit-slider-thumb {
+  
+  box-shadow: none;
+  border: 0px solid #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  height: 42px;
+  width: 22px;
+  border-radius: 22px;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+  
+}
+.rs-range::-moz-range-thumb {
+  box-shadow: none;
+  border: 0px solid #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  height: 42px;
+  width: 22px;
+  border-radius: 22px;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+}
+.rs-range::-moz-focus-outer {
+  border: 0;
+}
+
+.rs-label {
+  content: "$ ";
+  position: relative;
+  transform-origin: center center;
+  display: block;
+  width: 98px;
+  height: 98px;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 22px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  margin-top: 20px;
+  margin-left: -38px;
+  left: attr(value);
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+  
+}
+.rs-label::after {
+  content: "$";
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  margin-top: -2px;
+  
+}
+
+
+
+/* Intel Products */
+.intel{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 600px;
+  margin-bottom:500px;
+}
+.intel img{
+  height: 100px;
+  width:100px;
 }
