@@ -276,6 +276,16 @@ nav ul li a {
     background: #00d6fc;
     transition: all 0.25s ease;
   }
+  .btn1 a{
+    text-decoration: none;
+    font-size:20px;
+    color:#00d6fc;
+
+  }
+  .btn1 a:hover::after{
+    text-decoration: none;
+    display: none;
+  }
 .log i{
     position:absolute;
     margin-top:830px;
@@ -1488,6 +1498,7 @@ input:active+.design::after {
   height: 200px;
   width:200px;
   margin-left:48px;
+  margin-top:20px;
 }
 
 .intel button{
@@ -1512,9 +1523,11 @@ input:active+.design::after {
   color:#09008c;
   font-size:24px;
   transition:color 0.7s;
+  transition: padding 0.3s;
 }
 .intel a:hover{
   color:black;
+  padding:5px 5px 5px 5px;
 }
 .intel h2{
   text-decoration: line-through;
@@ -1522,9 +1535,91 @@ input:active+.design::after {
 .intel h1,.intel h2{
   display: inline;
 }
-.intel-1,.intel-2,.intel-3{
+.intel-1,.intel-2,.intel-3,.intel-4,.intel-5,.intel-6,.intel-7,.intel-8,.intel-9{
+  margin-bottom:50px;
   width:300px;
   padding:40px 40px 100px 40px;
   background-color: white;
   color:black;
 }
+
+.ryzen-pro{
+  position: relative;
+  background-color: white;
+  margin-top:-500px;
+  height:500px;
+  margin-left:10px;
+}
+.ryzen-pro h1 {
+  font-size:50px;
+  color:black;
+  margin-left:50px;
+  padding-top:50px;
+}
+.ryzen-pro img{
+  margin-top:-120px;
+  margin-left:1000px;
+  height: 450px;
+}
+.ryzen-pro ul{
+  margin-top:-300px;
+  position: relative;
+}
+.ryzen-pro ul li{
+  position: relative;
+  list-style:circle;
+  list-style-type: style black;
+  margin-top:10px;
+  margin-left:80px;
+  color:black;
+  font-size: 30px;
+}
+
+
+
+.intel-9{
+  margin-top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+.nvidia{
+  background-color: white;
+  color:black;
+  height:500px; 
+  padding-bottom:50px;
+  margin-left:10px;
+}
+.nvidia h1{
+  margin-left:1100px;
+  padding-top:20px;
+  font-size:50px;
+}
+.nvidia img{
+  height: 552px;
+margin-left:0px;
+margin-top:-125px;
+  position: relative;
+}
+.nvidia ul{
+  position:absolute;
+  margin-top:-470px;
+}
+.nvidia ul li{
+  list-style: circle;
+  list-style-type: style black;
+  position:relative;
+  margin-top:30px;
+  color:rgb(0, 0, 0);
+  margin-left:1100px;
+  font-size:22px;
+}
+
+
