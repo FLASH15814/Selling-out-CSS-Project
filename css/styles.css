@@ -5,7 +5,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    color:white;
+    color:rgb(255, 255, 255);
     background: linear-gradient(320deg, rgba(0,0,255,1) 0%, rgba(0,1,120,1) 0%, rgba(0,2,55,1) 36%, rgba(0,1,31,1) 55%, rgba(0,1,16,1) 80%, rgba(0,1,16,1) 80%, rgba(0,0,0,1) 100%);
     font-size:20px;
     font-family: 'Dosis', sans-serif;
@@ -1031,6 +1031,12 @@ nav.nav2:hover{
   transition:filter 1s;
 }
 
+/* About Page */
+
+nav.nav3{
+  margin-top:180px;
+}
+
 /* Slideshow for Products.html */
 
 .content-width {
@@ -1485,23 +1491,23 @@ input:active+.design::after {
   margin-bottom:500px;
   padding:20px 20px 20px 20px;
 }
-.intel h1{
+.intel h1,.ryzen h1{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.intel p{
+.intel p,.ryzen p{
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-weight:700;
 }
-.intel img{
+.intel img,.ryzen img{
   height: 200px;
   width:200px;
   margin-left:48px;
   margin-top:20px;
 }
 
-.intel button{
+.intel button,.ryzen button{
   margin-left:15px;
   border:none;
   height:40px;
@@ -1510,12 +1516,12 @@ input:active+.design::after {
   margin-right:0px;
   transition: background-color 0.7s;
 }
-.intel button:hover{
+.intel button:hover,.ryzen button:hover{
   cursor:pointer;
   background-color: #09008c;
   color:white;
 }
-.intel a{
+.intel a,.ryzen a{
   text-decoration: none;
   position:absolute;
   margin-top:60px;
@@ -1525,17 +1531,17 @@ input:active+.design::after {
   transition:color 0.7s;
   transition: padding 0.3s;
 }
-.intel a:hover{
+.intel a:hover,.ryzen a:hover{
   color:black;
   padding:5px 5px 5px 5px;
 }
-.intel h2{
+.intel h2,.ryzen h2{
   text-decoration: line-through;
 }
-.intel h1,.intel h2{
+.intel h1,.intel h2,.ryzen h1,.ryzen h2{
   display: inline;
 }
-.intel-1,.intel-2,.intel-3,.intel-4,.intel-5,.intel-6,.intel-7,.intel-8,.intel-9{
+.intel-1,.intel-2,.intel-3,.intel-4,.intel-5,.intel-6,.intel-7,.intel-8,.intel-9,.intel-10{
   margin-bottom:50px;
   width:300px;
   padding:40px 40px 100px 40px;
@@ -1575,19 +1581,22 @@ input:active+.design::after {
   font-size: 30px;
 }
 
-
-
-.intel-9{
+.ryzen{
   margin-top:50px;
+  margin-left:70px;
+  display: flex;
+  
 }
 
-
-
-
-
-
-
-
+.ryzen .intel-9,.intel-10,.intel-11{
+  position: relative;
+  margin-bottom:50px;
+  width:300px;
+  padding:40px 40px 100px 40px;
+  background-color: white;
+  color:black;
+  margin-right:80px;
+}
 
 
 .nvidia{
@@ -1596,6 +1605,7 @@ input:active+.design::after {
   height:500px; 
   padding-bottom:50px;
   margin-left:10px;
+  margin-bottom: -100px;;
 }
 .nvidia h1{
   margin-left:1100px;
@@ -1622,4 +1632,165 @@ margin-top:-125px;
   font-size:22px;
 }
 
+.footer-2 {
+  margin-left:45px;
+  margin-top:-280px;
+  margin-bottom:-25px;
+} 
+nav.nav3{
+  position: relative;
+  margin-top: 0px;
+}
 
+
+section.sections-1{
+  position: relative;
+  height: 1000px;
+}
+section.sections-1 h1{
+  text-align: center;
+  font-family: 'Nova Square', sans-serif;
+  font-size:50px;
+  position: relative;
+  margin-top:10px;
+}
+section.sections-1 .section-container-1 {
+  position: absolute;
+  margin-top:-350px;
+  margin-left:350px;
+}
+section.sections-1 .section-container-2{
+  position: absolute;
+  margin-top:-350px;
+  margin-left:1000px;
+}
+section.sections-1 .section-container-1 p,section.sections-1 .section-container-2 p{
+/* width:500px; */
+font-size:22px;
+font-family: 'Nova Square', sans-serif;
+}
+section.sections-1 .section-container-1 h1,section.sections-1 .section-container-2 h1{
+  position: relative;
+}
+
+
+.section-2{
+  margin-top:-35px;
+  position: absolute;
+  box-shadow: 0 0 1000px rgba(0,0,0,0.9) inset;
+}
+.section-2 img{
+  box-shadow: 0 0 100px rgba(0,0,0,0.9) inset;
+}
+.video-3{
+  position:relative;
+}
+.video-3 video{
+  position: absolute;
+  margin-top:-1100px;
+  margin-left:470px;
+  height:1000px;
+  width:1000px;
+}
+.section-2 .head-section{
+  position:absolute;
+  margin-top:-330px;
+  text-align:center;
+  font-size:30px;
+  margin-left:-140px;
+  font-family: 'Nova Square', sans-serif;
+}
+.head-section h2{
+  margin-left:280px;
+  font-family: 'Nova Square', sans-serif;
+}
+.section-2 .head-section p{
+
+  padding-left:500px;
+  padding-right:100px;
+  font-family: 'Nova Square', sans-serif;
+}
+.section-3{
+  position: relative;
+  display:grid;
+  place-items:center;
+  align-content: center;
+  min-height: 100vh;
+  margin-top:785px;
+}
+.section-3 img{
+  position: relative;
+  height: 650px;
+  width:1900px;
+}
+.section-3 h1{
+  position:absolute;
+  margin-top:-100px;  
+  font-size:40px;
+  font-family: 'Nova Square', sans-serif;
+}
+
+.section-3 .details{
+  position:absolute;
+  margin-left:1000px;
+}
+.section-3 .details li{
+  padding-bottom:7px;
+  font-size:30px;
+  font-family: 'Nova Square', sans-serif;
+}
+
+.section-4{
+  position:relative;
+  margin-top:-200px;
+  
+}
+.section-4 img{
+  height: 1200px;
+  width:1900px;
+
+}
+.section-4 h1{
+  position: relative;
+  font-size:40px;
+  background-color: white;
+  color:black;
+  text-align: center;
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-left:110px;
+  margin-left:10px;
+  margin-top:-1210px;
+  font-family: 'Nova Square', sans-serif;
+}
+.section-4 video{
+  margin-top:20px;
+  width:1000px;
+  margin-left:490px;
+  padding-bottom:50px;
+}
+.vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1200px;
+  width: 1900px;
+  background: radial-gradient(circle, transparent 70%, black 100%);
+}
+.section .list{
+  position: relative;
+  
+  
+}
+.section-4 li{
+  font-size:30px;
+  
+  padding:10px 50px 50px 50px;
+  margin-left:60px;
+  font-family: 'Nova Square', sans-serif;
+}
+.footer-3{
+  position: relative;
+  margin-top:1000px;
+  margin-left:45px;
+}
