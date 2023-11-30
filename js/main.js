@@ -15,6 +15,39 @@ productContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+
+
+
+
+
+
+//////////
+const sections = document.querySelectorAll('.animated');
+
+const fadeInOptions = {
+  threshold: 0.5, // Adjust as needed
+};
+
+const fadeInObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, fadeInOptions);
+
+sections.forEach((section) => {
+  fadeInObserver.observe(section);
+});
+
+////////
+
+
+
+
+
 // Product page slideshow
 const items = document.querySelectorAll(".item"),
   controls = document.querySelectorAll(".control"),
@@ -112,10 +145,6 @@ function showSliderValue() {
   var bulletPosition = (rangeSlider.value /rangeSlider.max);
   rangeBullet.style.left = (bulletPosition * 255) + "px";
 }
-
-
-//Sidebar
-
 
 
 //Video loop
