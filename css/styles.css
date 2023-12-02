@@ -1939,10 +1939,14 @@ section.sections-1 .section-container-1 h1,section.sections-1 .section-container
   margin-top:950px;
   margin-left:800px;
   /* margin-bottom:1000px; */
+  transition: margin-top 0.5s ease, margin-left 0.5s ease;
+  font-family: 'Nova Square', sans-serif;
 }
 .support-us h1{
   margin-top:-20px;
   position: relative;
+  transition: margin-top 0.5s ease, margin-left 0.5s ease;
+  font-family: 'Nova Square', sans-serif;
 }
 .support-us .vignette-4{
   position:absolute;
@@ -1950,6 +1954,7 @@ section.sections-1 .section-container-1 h1,section.sections-1 .section-container
   width:1900px;
   margin-top:-1205px;
   margin-left:-900px;
+  transition: margin-top 0.5s ease, margin-left 0.5s ease;
   background: radial-gradient(circle, rgba(0,0,0,0.1825105042016807) 0%, rgba(0,0,0,0.6895133053221288) 0%, rgba(0,0,0,1) 61%, rgba(0,0,0,1) 100%);
 }
 .support-us img{
@@ -1958,13 +1963,35 @@ section.sections-1 .section-container-1 h1,section.sections-1 .section-container
   margin-left:-800px;
   height:1200px;
   width:1900px;
+  transition: margin-top 0.5s ease, margin-left 0.5s ease;
 }
 
+.support-us h2{
+  position:absolute;
+  margin-top: -1000px;;
+  margin-left:-700px;
+  font-size:50px;
+  font-family: 'Nova Square', sans-serif;
+  transition: margin-top 0.5s ease, margin-left 0.5s ease;
+}
 
-
-
-
-
+.support-us button{
+  position: absolute;
+  margin-left:-1500px;
+  margin-top:400px;
+  height: 100px;
+  width:400px;
+  cursor: pointer;
+  border:none;
+  font-size:30px;
+  transition: margin-top 0.5s ease, margin-left 0.5s ease;
+}
+.support-us a{
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  font-size:30px;
+  cursor: pointer;
+}
 .footer-3{
   position: relative;
   margin-top:1000px;
@@ -1972,8 +1999,9 @@ section.sections-1 .section-container-1 h1,section.sections-1 .section-container
 }
 .footer-4{
   position:absolute;
-  margin-top:2000px;
+  margin-top:1300px;
   margin-left:50px;
+  margin-bottom:-50px;
 }
 .footer-4 img{
   height: 70px;
