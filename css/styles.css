@@ -1934,10 +1934,30 @@ section.sections-1 .section-container-1 h1,section.sections-1 .section-container
 
 
 
+.support-us{
+  position:absolute;
+  margin-top:1500px;
+  margin-left:800px;
+}
+.supp
+
+
+
+
 
 
 .footer-3{
   position: relative;
   margin-top:1000px;
   margin-left:45px;
+}
+.footer-4{
+  position:absolute;
+  margin-top:1000px;
+  margin-left:50px;
+}
+.footer-4 img{
+  height: 70px;
+  width:100px;
+  position:relative;
 }
