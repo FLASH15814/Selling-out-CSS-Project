@@ -1,0 +1,6 @@
+{
+    "powershell.pester.codeLens": false,
+    "files.watcherExclude": {
+        "**/target": true
+    }
+}

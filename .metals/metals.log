@@ -1,0 +1,12 @@
+2023.11.27 23:44:22 INFO  Started: Metals version 1.1.0 in folders 'C:\Users\ransh\OneDrive\Desktop\Interface Design Using CSS\Main Project' for client Visual Studio Code 1.84.2.
+2023.11.27 23:44:22 WARN  Build server is not auto-connectable.
+2023.11.27 23:44:22 WARN  no build tool detected in workspace 'C:\Users\ransh\OneDrive\Desktop\Interface Design Using CSS\Main Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Nov. 27, 2023 11:45:48 P.M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov. 27, 2023 11:45:48 P.M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov. 27, 2023 11:57:14 P.M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.11.28 15:52:56 INFO  Shutting down server
+2023.11.28 15:52:56 INFO  shutting down Metals
+2023.11.28 15:52:56 INFO  Exiting server
